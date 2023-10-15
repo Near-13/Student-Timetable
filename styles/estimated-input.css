@@ -1,0 +1,115 @@
+.estimated-time-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  flex-direction: column;
+  background-color: #EEEAF2;
+  width: 770px;
+  margin-left: 16px;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #CCC2D9;
+  border-width: 4px;
+}
+
+.point-estimation-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.estimation-add-task-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+.optimistic-estimation,
+.most-likely-estimation,
+.pessimistic-estimation {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 100px;
+  margin-top: 10px;
+}
+
+.estimated-time-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 18px;
+  margin-right: 10px;
+  color: #402C58;
+}
+
+.point-estimation-container .title {
+  margin-left: 20px;
+  color: #402C58;
+}
+
+.minute-container,
+.hour-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  column-gap: 6px;
+  color: #402C58;
+}
+
+.point-estimation-container button {
+  width: 20px;
+  height: 20px;
+}
+
+.minute-input,
+.hour-input {
+  background-color: #FAF9FB;
+  border-radius: 10px;
+  border-style: solid;
+  width: 50px;
+  font-size: 20px;
+}
+
+.optimistic-estimation .title {
+  margin-left: 18px;
+  margin-right: 10px;
+}
+
+.add-task-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-task-icon {
+  margin-top: -14px;
+  width: 80px;
+}
+
+.add-task-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  border: none;
+  transition: opacity 0.15s;
+}
+
+.add-task-button:hover {
+  opacity: 0.8;
+}
+
+.add-task-button:active {
+  opacity: 0.5;
+}
+
+.add-task-container label {
+  color: #4B5F24;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: -24px;
+}

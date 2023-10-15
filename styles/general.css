@@ -1,0 +1,60 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+  width: 900px;
+  margin: 100px 0px 100px 150px;
+  background-color: #F5F3F8;
+  border-radius: 80px;
+  border-width: 4px;
+  border-color: #8369A0;
+  border-style: solid;
+}
+
+.output-element {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 2200px) {
+  .main-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-element {
+    margin: 100px 0px 0px 0px;
+  }
+}
+
+body {
+  background-color: #FAF2F1;
+  font-family: Arial;
+  padding: 0;
+  margin: 0px;
+}
+
+button {
+  border-style: solid;
+  background-color: lightgray;
+  border-radius: 2px;
+  border-width: 1px;
+  border-color: gray;
+}
+
+select {
+  padding: 4px 2px;
+}
+
+input {
+  width: 30px;
+  text-align: center;
+  padding: 2px 2px;
+}

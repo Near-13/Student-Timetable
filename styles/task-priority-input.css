@@ -1,0 +1,117 @@
+.task-priority-container {
+  display: grid;
+  justify-content: center;
+}
+
+.title-description-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #EEEAF2;
+  height: 400px;
+  width: 800px;
+  row-gap: 40px;
+  margin-top: 8px;
+  padding: 20px 20px;
+  border-radius: 50px;
+  border-width: 4px;
+  border-color: #D2CBDF;
+  border-style: solid;
+}
+
+.task-description-container {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.task-heading {
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  color: #402C58;
+}
+
+.input-container {
+  display: flex;
+  height: 60px;
+}
+
+.task-title-input {
+  background-color: #FAF9FB;
+  font-size: 20px;
+  font-family: Arial;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 4px 10px 4px 10px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #CCC2D9;
+  border-width: 2px;
+}
+
+.task-description-input {
+  background-color: #FAF9FB;
+  display: flex;
+  flex: 1;
+  min-width: 750px;
+  max-width: 750px;
+  max-height: 160px;
+  min-height: 80px;
+  font-size: 20px;
+  font-family: Arial;
+  margin: 4px 10px;
+  padding: 14px;
+  border-radius: 30px;
+  border-color: #CCC2D9;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.priority-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 40px 0px 40px 0px;
+  background-color: #EEEAF2;
+  height: 80px;
+  width: 780px;
+  padding: 20px 30px;
+  border-radius: 80px;
+  row-gap: 10px;
+  border-style: solid;
+  border-color: #CCC2D9;
+  border-width: 4px;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 20px;
+  color: #402C58;
+}
+
+.easiness-dropdown,
+.urgency-dropdown,
+.importance-dropdown {
+  background-color: #FAF9FB;
+  height: 36px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.priority-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+  color: #402C58;
+}
+
+.priority-container label {
+  font-size: 20px;
+}
+

@@ -1,0 +1,42 @@
+.easiness-dropdown-container,
+.importance-dropdown-container,
+.urgency-dropdown-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.priority-tooltip {
+  position: absolute;
+  background-color: #ffffff;
+  color: #615a69;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  width: 220px;
+  margin-top: 0px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.easiness-label-container:hover .priority-tooltip,
+.importance-label-container:hover .priority-tooltip,
+.urgency-label-container:hover .priority-tooltip,
+.estimated-time-label-container:hover .priority-tooltip,
+.optimistic-label-container:hover .priority-tooltip,
+.most-likely-label-container:hover .priority-tooltip,
+.pessimistic-label-container:hover .priority-tooltip
+ {
+  opacity: 1;
+}
+
+.priority-description, 
+.estimated-time-description{
+  font-size: 16px;
+}
