@@ -1,0 +1,78 @@
+.countdown-container {
+  position: relative;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  align-items: center;
+  margin-left: 0px;
+  background-color: rgb(228, 215, 225);
+  width: 220px;
+  height: 40px;
+  border-radius: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(185, 161, 179);
+}
+
+.countdown-button-container {
+  background-color: rgb(255, 233, 225);
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 38px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(220, 197, 189);
+  margin-left: 6px;
+}
+
+.pause-button,
+.play-button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+}
+
+.pause-button:hover,
+.play-button:hover {
+  opacity: 0.8;
+}
+
+.pause-button:active,
+.play-button:active {
+  opacity: 0.6;
+}
+
+.icon-pause {
+  width: 10px;
+}
+
+.icon-play {
+  width: 15px;
+}
+
+.display-timer {
+  font-family: arial;
+  position: absolute;
+  right: 18px;
+  top: -6px;
+}
+
+.input-button-start {
+  position: absolute;
+  top: 100px;
+}
+
+.input-button-pause {
+  position: absolute;
+  top: 150px;
+}
+
+.delete-button {
+  background-color: rgb(183, 62, 62);
+  color: white;
+  padding: 4px 30px;
+  border-radius: 20px;
+}
