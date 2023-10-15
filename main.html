@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/estimated-input.css">
+
+    <link rel="stylesheet" href="styles/general.css">
+
+    <link rel="stylesheet" href="styles/generated-schedule.css">
+
+    <link rel="stylesheet" href="styles/header.css">
+
+    <link rel="stylesheet" href="styles/task-priority-input.css">
+
+    <link rel = "stylesheet" href = "styles/countdown.css">
+
+    <link rel = "stylesheet" href = "styles/tooltip.css">
+
+    <title>
+      Online Task Organizer
+    </title>
+  </head>
+
+  <body>
+    <header class="header-container">
+
+      <div class="logo-container">
+        <img class="logo-icon" src="designs/logo.png">
+      </div>
+
+      <div class="title-container">
+        <div class="title">
+          Daily Task Recommender
+        </div>
+      </div>
+
+      <div class="redirect-page-container">
+        <a class="home-page-link" href="main.html">
+          HOME
+        </a>
+
+        <a class="about-page-link" href="about.html">
+          ABOUT
+        </a>  
+      </div>
+
+    </header>
+
+    <main class="main-container">
+
+      <div class="input-element">
+        <div class="task-priority-container">
+          
+          <div class="title-description-container">
+            <div class="task-container">
+              <h3 class="task-heading">Title of Task</h3>
+              <div class="input-container">
+                <input class="task-title-input js-task-title-input" value=''>
+              </div>
+            </div>
+            
+            <div class="task-description-container">
+              <h3 class="task-heading">Task Description</h3>
+              <div class="input-container">
+                <textarea class="task-description-input js-task-description-input" value=''>
+                </textarea>
+              </div>
+            </div>
+          </div>
+  
+          <div class="priority-container">
+            <div class="priority-tooltip">
+
+            </div>
+            <div class="easiness-label-container">
+              <label class="priority-title">Priority</label>
+
+              <div class="priority-tooltip">
+                <div class="priority-description">The task with high priority value will be the first to be included in the recommended list</div>
+              </div>
+            </div>
+  
+            <div class="dropdown-container">
+              <div class="easiness-dropdown-container">
+                <div class="easiness-label-container">
+                  <label class="easiness-label"><i>easiness: </i> </label>
+
+                  <div class="priority-tooltip">
+                    <div class="priority-description">This indicate the difficulty level of the inputted task. Most of the time, tasks that are low in easiness requires a lot of time and effort</div>
+                  </div>
+                </div>
+                
+    
+                <select name="easiness-dropdown" class="easiness-dropdown js-easiness">
+                  <option class="option-input" value="1">Very Low</option>
+                  <option class="option-input" value="2">Low</option>
+                  <option class="option-input" value="3">Medium</option>
+                  <option class="option-input" value="4">High</option>
+                  <option class="option-input" value="5">Very High</option>
+                </select>
+              </div>
+    
+              <div class="importance-dropdown-container">
+                <div class="importance-label-container">
+                  <label class="importance-label"><i>importance: </i> </label>
+
+                  <div class="priority-tooltip">
+                    <div class="priority-description">This refers to how significant the task is. Usually, school related or work related tasks has high importance compared to leisure and hobby. Still, it depends upon the user's personal preferences</div>
+                  </div>
+                </div>
+    
+                <select name="importance-dropdown" class="importance-dropdown js-importance">
+                  <option class="option-input" value="1">Very Low</option>
+                  <option class="option-input" value="2">Low</option>
+                  <option class="option-input" value="3">Medium</option>
+                  <option class="option-input" value="4">High</option>
+                  <option class="option-input" value="5">Very High</option>
+                </select>
+              </div>
+              
+              <div class="urgency-dropdown-container">
+                <div class="urgency-label-container">
+                  <label class="urgency-label"><i>urgency: </i> </label>
+
+                  <div class="priority-tooltip">
+                    <div class="priority-description">Task with high urgency means it should be completed immediately, such as the pendings that are due tomorrow or within a few days</div>
+                  </div>
+                </div>
+    
+                <select name="urgency-dropdown" class="urgency-dropdown js-urgency">
+                  <option class="option-input" value="1">Very Low</option>
+                  <option class="option-input" value="2">Low</option>
+                  <option class="option-input" value="3">Medium</option>
+                  <option class="option-input" value="4">High</option>
+                  <option class="option-input" value="5">Very High</option>
+                </select>
+              </div> 
+            </div>
+            
+        </div>
+  
+        <div class="estimated-time-container">
+          <div class="estimated-time-label-container">
+            <label class="estimated-time-title">Estimated Time:</label>
+
+            <div class="priority-tooltip">
+              <div class="estimated-time-description">Computes the task's time if the user has no prior knowledge regarding the duration of the task. If they have, they'll only need to input identical time length in each input box</div>
+            </div>
+          </div>
+  
+          <div class="estimation-add-task-container">
+            <div class="point-estimation-container">
+
+              <div class="optimistic-estimation">
+                <div class="optimistic-label-container">
+                  <label class="title"><i>Optimistic</i></label>
+
+                  <div class="priority-tooltip">
+                      <div class="estimated-time-description">The duration which the user think they can complete the task if things go as they planned. The instances are, if their friend has helped them with the task or they are in a mood to do the task</div>
+                  </div>
+                </div>
+                <div class="minute-container">
+                  <div>minutes:</div>
+                  <input type="number" min="0" max="59" placeholder="0" class="js-op-minute minute-input">
+                </div>
+                <div class="hour-container">
+                  <div>hours:</div>
+                  <input type="number" min="0" max="8" placeholder="0" class="js-op-hour hour-input">
+                </div>
+              </div>
+    
+              <div class="most-likely-estimation">
+                <div class="most-likely-label-container">
+                  <label class="title"><i>Most likely</i></label>
+
+                  <div class="priority-tooltip">
+                    <div class="estimated-time-description">The time length which the user estimates they can complete the activity with the usual circumstance and mood</div>
+                  </div>
+                </div>
+                <div class="minute-container">
+                  <div>minutes:</div>
+                  <input type="number" min="0" max="59" placeholder="0" class="js-mo-minute minute-input">
+                </div>
+                <div class="hour-container">
+                  <div>hours:</div>
+                  <input type="number" min="0" max="8" placeholder="0" class="js-mo-hour hour-input">
+                </div>
+              </div>
+    
+              <div class="pessimistic-estimation">
+                <div class="pessimistic-label-container">
+                  <label class="title"><i>Pessimistic</i></label>
+
+                  <div class="priority-tooltip">
+                    <div class="estimated-time-description">The worst case scenario estimation. For instance, they suddenly was given an errand or their drink has spilled. In other words, these are instances where additional chores will be done</div>
+                  </div>
+                </div>
+                
+                <div class="minute-container">
+                  <div>minutes:</div>
+                  <input type="number" min="0" max="59" placeholder="0" class="js-ps-minute minute-input">
+                </div>
+                <div class="hour-container">
+                  <div>hours:</div>
+                  <input type="number" min="0" max="8" placeholder="0" class="js-ps-hour hour-input">
+                </div>
+              </div>
+            </div>
+            
+            <div class="add-task-container">
+              <button class="add-task-button js-add-task">
+                <img class="add-task-icon" src="designs/add-task.png">
+                <label>Add Task</label>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="generate-button-container">
+          <button class="generate-button">
+            Display Schedule
+          </button>
+        </div>
+      </div>
+      </div>
+
+      <div class="output-element">
+        <h2 class="generated-table-heading">
+          SCHEDULE:
+        </h2>
+
+        <div class="generated-table js-generated-table">
+          <div class="js-empty-schedule empty-schedule">
+
+            <p>
+              No schedule posted.
+            </p>
+
+            <p>
+              Click the <i>display schedule</i> button if you already have added a task.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/main.js"></script>
+    
+    <script src="scripts/countdown.js"></script>
+
+    <script src="scripts/generate-schedule.js"></script>
+
+    <script src="scripts/continue-timer.js"></script>
+
+    <script src="scripts/continue-timer-worker.js"></script>
+  </body>
+</html>
